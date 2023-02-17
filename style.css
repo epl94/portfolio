@@ -1,0 +1,541 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EFE7E3;
+  /* #F2F2F2 */
+}
+
+.frame {
+  margin: 30px 150px;
+  /* 상하 좌우 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* navigator bar */
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.site-name {
+  font-family: 'Montserrat', sans-serif;
+  /* '', 없음의 차이 */
+  font-weight: 800;
+  font-size: 25px;
+  color: #C2B4AB;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.nav-menu {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* a:link, a:visited {
+  color: black;
+  text-decoration: none;
+} */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  /* .nav-menu:hover */
+  color: white;
+  transition: 0.3s;
+}
+
+/* dashboard */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.comment0 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  margin-top: 15px;
+}
+
+.name {
+  /* background-color: transparent; */
+  color: white;
+  -webkit-text-stroke: 1px black;
+  
+}
+
+.name:hover {
+  /* background-color: #FECCBE; */
+  color: #FECCBE;
+  transition: 0.3s;
+}
+
+#emo {
+  width: 190px;
+  height: 190px;
+  border-radius: 100px;
+  
+}
+
+/* .highlight {
+   color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.highlight:hover {
+  background-color: pink;
+  color: black;
+  transition: none;
+}
+
+.type1:hover {
+  background-color: powderblue;
+} */
+
+.comment1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  font-style: italic;
+  /* letter-spacing: -0.3px; */
+  position: relative;
+  animation: slide 1s ease-out;
+}
+
+@keyframes slide {
+  from {
+    left: -200px;
+    opacity: 0;
+  }
+
+  to {
+    left: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    left: 100px;
+    opacity: 1;
+  }
+  
+  to {
+    left: -200px;
+    opacity: 0;
+  }
+}
+
+/* recent works */
+
+.recent-menu {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color:#C2B4AB;
+  text-align: right;
+  /* display: inline;
+  align-self: flex-end; */
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+
+.recent-works {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 120px;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 700px;
+  height: 500px;
+  margin: auto;
+}
+
+.article-info {
+  margin: 0 30px;
+}
+
+.article-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+/* .article-name:hover {
+  color: pink;
+  -webkit-text-stroke: 1px black;
+  transition: 0.3s;
+} */
+
+.article-comment {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+a.more {
+  width: content;
+  height: content;
+  float: right;
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+}
+
+#n1 {
+  position: relative;
+  right: 40px;
+}
+
+#n2 {
+  text-align: right;
+  position: relative;
+  left: 55px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  /* width: 100%;
+  text-align: center; */
+  color: #C2B4AB;
+  border-top: 1px solid #C2B4AB;
+  margin-bottom: 20px;
+}
+
+.links>a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+/* .links>a:hover {
+  color: red;
+} */
+
+.footer>p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.footer-comment {
+  text-align: center;
+}
+
+/* a[title=""]:hover{
+  color: black;
+  text-decoration: underline;
+} */
+
+
+/* INFO Section */
+
+/* profile-section */
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 100px 100px;
+}
+
+#profile-picture {
+  width: 400px;
+  margin-right: 60px;
+}
+
+.introduction>h2 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.introduction>p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+#capability {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+/* value section */
+
+.value-menu {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  /* margin: 30px 100px; */
+}
+
+.value-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 100px 150px;
+  margin-top: 20px;
+}
+
+.value {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  align-items: center;
+  /* 수직방향의 가운데 정렬 */
+}
+
+.value-icon {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  /* icon과 border 안에 영역 */
+  border: 2px solid #C2B4AB;
+  border-radius: 100px;
+}
+
+.value-intro {
+  margin-left: 30px;
+}
+
+.value-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.value-exp {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* project section */
+
+#project-dashboard-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px; 
+  font-weight: 500; 
+  margin: 0;
+}
+
+#project-ppt-img0 {
+  display: block;
+  margin: 45px auto 25px auto;
+  width: 1000px;
+  height: 500px;
+}
+
+#project-dashboard-comment {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  font-style: italic;
+}
+
+#project-ppt-img1 {
+  display: block;
+  margin: 0 auto 100px auto;
+  width: 1000px;
+  height: 500px;
+}
+
+/* project section slide1 */
+
+.slideWrap1, .slideWrap2, .slideWrap3, .slideWrap4 {
+  /* 방법 1 */
+  /* width: 400vw; */
+  /* transform: translate(-100vw); */
+  /* x축 이동 (animation 적용 시에는 margin보다 transform이 적절) */
+  /* transition: transform 0.5s; */
+
+  /* 방법 2 */  
+  position: relative;
+  /* width: 100%; */
+  width: 700px;
+  /* height: 500px; */
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.slider-container1, .slider-container2, .slider-container3, .slider-container4 {
+  position: absolute;
+  width: 100%;
+  /* width: 700px; */
+  /* height: 500px; */
+  left: 0;
+}
+
+.slide1, .slide2, .slide3, .slide4 {
+  /* 방법 1 */
+  /* width: 100vw; */
+  /* float: left; */
+
+  /* 방법 2 */
+  position: absolute;
+  width: 100%;
+  /* width: 700px; */
+  /* height: 500px; */
+  /* padding: 0 10%; */
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  overflow: hidden;  
+}
+
+.slider-container1.animated {
+  -webkit-transition: left 0.3s ease-in;
+  /* 권장X */
+  transition: left 0.3 ease-in;
+}
+
+.slider-container2.animated {
+  -webkit-transition: left 0.3s ease-in;
+  /* 권장X */
+  transition: left 0.3 ease-in;
+}
+
+.slider-container3.animated {
+  -webkit-transition: left 0.3s ease-in;
+  /* 권장X */
+  transition: left 0.3 ease-in;
+}
+
+.slider-container4.animated {
+  -webkit-transition: left 0.3s ease-in;
+  /* 권장X */
+  transition: left 0.3 ease-in;
+}
+
+.slideImg1, .slideImg2, .slideImg3, .slideImg4 {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+}
+
+.pager1, .pager2, .pager3, .pager4 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pager1 span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  /* text-indent: -9999em; */
+  margin: 0 10px;
+}
+
+.pager1 span.active {
+  background-color: #333;
+}
+
+.pager2 span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  /* text-indent: -9999em; */
+  margin: 0 10px;
+}
+
+.pager2 span.active {
+  background-color: #333;
+}
+
+.pager3 span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  /* text-indent: -9999em; */
+  margin: 0 10px;
+}
+
+.pager3 span.active {
+  background-color: #333;
+}
+
+.pager4 span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  /* text-indent: -9999em; */
+  margin: 0 10px;
+}
+
+.pager4 span.active {
+  background-color: #333;
+}
+
+
+
