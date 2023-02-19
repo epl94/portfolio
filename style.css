@@ -171,8 +171,13 @@ a:hover {
 .article {
   display: flex;
   flex-direction: row;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
   align-items: center;
+}
+
+#a1-p {
+  border-bottom: 2px solid #C2B4AB;
 }
 
 .thumbnail {
@@ -204,6 +209,10 @@ a:hover {
   font-weight: 300;
 }
 
+#c1-p, #c2-p {
+  line-height: 1.8;
+}
+
 a.more {
   width: content;
   height: content;
@@ -231,9 +240,11 @@ a.more {
 
 .footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 200px;
+  /* flex-direction: column; */
+  align-items: baseline;
+  justify-content: flex-end;
+  /* margin-bottom: 200px; */
+  padding: 100px 0;
 }
 
 .contact {
@@ -328,8 +339,8 @@ a.more {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 100px 150px;
-  margin-top: 20px;
+  margin: 20px 150px;
+  margin-bottom: 50px;
 }
 
 .value {
@@ -367,6 +378,12 @@ a.more {
   margin: 0;
 }
 
+cite {
+  display: block;
+  margin: 20px 0;
+  font-size: x-small;
+}
+
 /* project section */
 
 #project-dashboard-title {
@@ -392,7 +409,7 @@ a.more {
 
 #project-ppt-img1 {
   display: block;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
   width: 1000px;
   height: 500px;
 }
